@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bhaiksuki&family=Playwrite+DE+SAS:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif ;
+    background-color:rgba(18, 20, 33, 1);
+
+    height: 2000px;
+
+}
+
+:root{
+    --text-color: #919CC9;
+    --text-color1: rgba(255, 255, 255, 1);
+    --background-color: rgba(18, 56, 237, 1);
+}
+
+a{
+    text-decoration: none;
+}
+
+#navbar{
+    padding: 15px 30px;
+   
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.desc-logo{
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+   
+}
+
+.nav-list{
+    display: none;
+}
+
+.name-logo{
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--text-color1);
+}
+
+
+
+.btn-login{
+    padding: 16px 26px;
+    border-radius:999px;
+    border: none;
+    background-color: var(--background-color);
+    color: var(--text-color1);
+    font-size: 14px;
+    
+}
+.bottom-line {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/* hero */
+
+.hero{
+    background-color: #1238ED;
+}
+.hero-detail{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('./asset/img/background-Hero.png') ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    width: 380px;
+    height: 480px;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;  
+     
+}
+
+.hero-title{
+    width: 323px;
+    height: 78px;
+    font-weight: 700;
+    font-weight: bold;
+    font: size 1rem;
+    line-height: 38.79px;
+    letter-spacing: -1px;
+    text-align: center;
+    color: white;
+    padding-top: 36px;
+
+}
+
+.hero-desc{
+    width:323px ;
+    height:32px ;
+    font-weight: 700px;
+    font-weight: bold;
+    font-size: 10.34px;
+    line-height: 15.52px;
+    letter-spacing: 0px;
+     /* margin-left: auto;
+    margin-right: auto;  */
+    padding-top: 40px;
+    text-align: center;
+    color: var(--text-color1)
+}
+
+/* categories */
+
+#categories{
+    
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Menjaga seluruh blok tetap di tengah layar */
+    width: 100%;
+    
+    
+}
+
+.container-penggabung{
+    width: 100%;       /* Lebar fleksibel untuk layar kecil */    
+    max-width: 380px;     /* Sesuaikan dengan total lebar 2 gambar + gap */
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-start; /* Mengunci semua konten rata kiri di dalam container ini */
+}
+
+.Categories-judul h2{
+
+     font-weight: 700;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0;
+
+     color: var(--text-color1);
+
+    margin-bottom: 28px;
+    text-align: left;
+    padding-left: 0;
+    width: 100%;
+
+    
+}
+
+.Categories-image{
+    display: flex;
+    justify-content: start; /* Sejajar kiri mengikuti judul */
+    gap: 12px;
+    width: 100%;
+    
+    
+}
+
+.Categories-image img{
+    width: 176px;
+    height: 176px;
+    border-radius: 12px;
+    margin-bottom: 12px ;
+    object-fit: cover;
+
+}
+
+.desc-image1 h3{
+    width: 176px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: var(--text-color1);
+}
+
+.desc-image1 p{
+    width: 176px;
+    height: 63px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0px;
+
+    color: var(--text-color);
+}
+
+.desc-image2{
+    display: none;
+}
+
+.desc-image3{
+    display: none;
+}
+.desc-image4{
+    display: none;
+}
+
+/* Fetured */
+
+#fitured{
+    margin-top: 28px;
+    display: flex;
+    justify-content: center; 
+}
+
+.featured-judul{
+     margin-bottom: 28px;
+    display: flex;
+    justify-content: start; 
+    width: 100%;
+}
+
+
+
+.gabung-aja{
+    width: 100%;       
+    max-width: 380px;     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.featured-combinasi{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.featured-img img{
+    width: 176px;
+    height: 256px;
+    border-radius: 12px;
+}
+.featured-judul h2{
+    width: 348px;
+    height: 28px;
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: var(--text-color1);
+}
+
+.featured-teks h3{
+
+width: 168px;
+height: 23px;
+font-weight: 700;
+font-weight: bold;
+line-height: 23px;
+letter-spacing: 0px;
+color: var(--text-color1);
+padding-bottom: 30px;
+}
+
+.featured-teks p{
+    /* background-color: red; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: var(--text-color);
+}
+
+.featured-teks button{
+    width: 108px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    margin-top: 13px;
+    color: white;
+    background-color: var(--background-color);
+    
+    
+}
+
+/* trending */
+
+ #trending{
+ 
+  margin-top: 28px;
+    width: 100%;
+   
+} 
+
+
+.trending-judul{
+    /* background-color: red; */
+   
+    margin-bottom: 20px;
+    color: var(--text-color1);
+}
+
+
+
+.trending-column{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      
+      align-items: start;
+}
+
+/* .trending-image{ */
+    /* background-color: red; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(2,1fr); */
+    /* justify-content: center;
+    align-items: center; */
+    /* max-width: 100%; */
+    /* gap: 12px; */
+    
+/* } */
+    .trending-judul h2{
+        /* background-color: red; */
+        width: 348px;
+        height: 28px;
+        font-weight: 700;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        color: var(--text-color1);
+        text-align: left;
+        padding-left: 0;
+        width: 100%;
+    
+    }
+/* .trending-container{ */
+    
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center; */
+    
+      
+    /* gap:12px ; */
+/* } */
+
+
+.trending-desc img{
+    width: 223px;
+    height: 223px;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+}
+
+.gambar2{
+    clip-path: inset(0 50% 0 0);
+}
+
+.trending-desc h3{
+    width: 223px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: var(--text-color1);
+
+
+}
+
+.trending-desc p{
+    width: 223px;
+    height: 63px;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: var(--text-color);
+}
+
+@media (min-width: 768px){
+    
+    .nav-list{
+    display: block;
+}
+.gabungan{
+    display: flex;
+    align-items: center; 
+    gap: 40px ;
+    
+ 
+}
+.nav-list ul{
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    list-style: none;
+}
+
+li a{
+    color: var(--text-color1);
+    font-size: 14px;
+    
+}
+
+.hero-detail{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),  url('./asset/img/background-Hero.png') ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 928px;
+    height: 480px;
+    border-radius: 12px;
+    
+}
+
+.hero-title{
+    
+    width: 700px;
+    height: 60px;
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 60px;
+    line-height: 38.79px;
+    letter-spacing: -2px;
+    text-align: center;
+    color:var(--text-color1)
+  
+}
+
+.hero-desc{
+    
+    text-align: center;
+    width:848px ;
+    height:48px ;
+    font-weight: 700px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: var(--text-color1);
+}
+
+
+/* categories */
+
+.container-penggabung{
+    width: 100%;            
+    max-width: 920px;     
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.desc-image2{
+    display: block;    
+}
+
+.desc-image3{
+    display: block;
+    
+}
+.desc-image4{
+    display: block;
+    
+}
+
+.desc-image2 h3{
+    width: 176px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: var(--text-color1);
+}
+
+.desc-image2 p{
+    width: 176px;
+    height: 63px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: var(--text-color);
+}
+
+.desc-image3 h3{
+    width: 176px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: var(--text-color1);
+}
+
+.desc-image3 p{
+    width: 176px;
+    height: 63px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: var(--text-color);
+}
+
+.desc-image4 h3{
+    width: 176px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: var(--text-color1);
+}
+
+.desc-image4 p{
+    width: 176px;
+    height: 63px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: var(--text-color);
+}
+
+/* Fetured */
+
+
+.gabung-aja{
+    width: 100%;       
+    max-width: 926px;     
+    display: flex;
+
+}
+
+.featured-teks{
+   margin-bottom: 60px;
+}
+
+.featured-img img{
+    width: 410px;
+    height: 256px;
+    border-radius: 12px;
+}
+
+.featured-teks h3{
+
+width: 378px;
+height: 23px;
+font-size: 18px;
+font-weight: 700;
+font-weight: bold;
+line-height: 23px;
+letter-spacing: 0px;
+color: var(--text-color1);
+
+padding-bottom: 30px;
+}
+
+.featured-teks p{
+    width: 344px;
+    height: 72px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: var(--text-color);
+}
+
+.featured-teks button{
+    width: 108px;
+    height: 32px;
+    min-width: 84px;
+    max-width: 480px;
+    top: 131px;
+    left: 426px;
+    
+    border-radius: 16px;
+    border: none;
+    margin-top: 13px;
+    color: white;
+    background-color: var(--background-color);
+    
+    
+}
+
+
+    }
+
+
+
+

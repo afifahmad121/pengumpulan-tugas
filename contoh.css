@@ -1,0 +1,58 @@
+.trending-section {
+  padding: 20px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.trending-section h3 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.trending-grid {
+  display: grid;
+  /* MEMBAGI 4 KOLOM SAMA RATA */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; /* Jarak antar kartu */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* MEMASTIKAN GAMBAR KOTAK SEMPURNA */
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px; /* Kelengkungan sudut sesuai gambar */
+  background-color: #333; /* Warna cadangan */
+}
+
+.card h4 {
+  color: white;
+  margin: 15px 0 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card p {
+  color: #a0a5b8;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* RESPONSIVE: Agar tidak hancur di layar HP */
+@media (max-width: 900px) {
+  .trending-grid {
+    grid-template-columns: repeat(2, 1fr); /* Jadi 2 kolom di tablet */
+  }
+}
+
+@media (max-width: 500px) {
+  .trending-grid {
+    grid-template-columns: 1fr; /* Jadi 1 kolom di HP */
+  }
+}
