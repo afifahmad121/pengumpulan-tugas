@@ -11,6 +11,7 @@
     --color-card: rgba(247, 250, 252, 1);
     --color-borderCard: rgba(207, 214, 232, 1);
     --color-border: rgba(18, 92, 237, 1);
+    --color-ungu: rgba(77, 102, 153, 1);
 
 
 
@@ -24,7 +25,7 @@
 
 @layer components {
     .btn{
-        @apply w-22.25 h-10 min-w-21 max-w-120 pr-4 pl-4 rounded-lg text-sm leading-4 bg-border text-white font-bold;
+        @apply w-22.25 h-10 min-w-21 max-w-120 pr-4 pl-4 rounded-lg text-sm leading-4 bg-border hover:bg-hitam text-white font-bold;
     }
 }
 
